@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dag"
+version = "0.1.0"
+description = ""
+authors = ["Alexsandr250897 <132817845+Alexsandr250897@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.9.2"
+networkx = "^3.3"
+matplotlib = "^3.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
