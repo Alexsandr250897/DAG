@@ -19,9 +19,9 @@ class DAGRunner:
             if task.id not in self.visited:
                 dfs(task.id)
 
-
         self.execution_order.reverse()
         return self.execution_order
+
 
     def execute_tasks(self):
         order = self.topological_sort()
