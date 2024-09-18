@@ -1,0 +1,46 @@
+{
+  "tasks": [
+    {
+      "id": "task A",
+      "name": "Task A",
+      "command": "echo Executing Task A",
+      "dependencies": []
+    },
+    {
+      "id": "task B",
+      "name": "Task B",
+      "command": "echo Executing Task B",
+      "dependencies": ["task A"]
+    },
+    {
+      "id": "task C",
+      "name": "Task C",
+      "command": "echo Executing Task C",
+      "dependencies": ["task A"]
+    },
+    {
+      "id": "task D",
+      "name": "Task D",
+      "command": "echo Executing Task D",
+      "dependencies": ["task B", "task C"]
+    },
+    {
+      "id": "task E",
+      "name": "Task E",
+      "command": "echo Executing Task E",
+      "dependencies": ["task D"]
+    },
+    {
+      "id": "task F",
+      "name": "Task F",
+      "command": "echo Executing Task F",
+      "dependencies": ["task C"]
+    },
+    {
+      "id": "task G",
+      "name": "Task G",
+      "command": "echo Executing Task G",
+      "dependencies": ["task E", "task F"]
+    }
+  ]
+}

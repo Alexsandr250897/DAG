@@ -15,10 +15,10 @@ class DAGRunner:
                 if dep not in self.visited:
                     dfs(dep)
             self.execution_order.append(task_id)
-
         for task in self.dag.tasks:
             if task.id not in self.visited:
                 dfs(task.id)
+
 
         self.execution_order.reverse()
         return self.execution_order
